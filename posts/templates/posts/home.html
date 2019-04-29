@@ -1,0 +1,17 @@
+{% extends "posts/base.html" %}
+{% block content %}
+    {% for coluna in colunas %}
+
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#">{{ coluna.autor }}</a>
+                <small class="text-muted">{{ coluna.data }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ coluna.titulo }}</a></h2>
+                <a class="mr-2" href="#">{{ coluna.tags }}</a>
+            <p class="article-content">{{ coluna.materia }}</p>
+        </div>
+    </article>
+    {% endfor %}
+{% endblock content %}

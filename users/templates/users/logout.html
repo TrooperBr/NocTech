@@ -1,0 +1,9 @@
+{% extends "posts/base.html" %}
+{% block content %}
+    <h2>Você esta desconectado</h2>
+        <div class="content-section">
+            <small class="text-muted">
+                Fazer Login Novamente: <a href="{% url 'login' %}">Login</a>
+            </small>
+        </div>
+{% endblock content %}
